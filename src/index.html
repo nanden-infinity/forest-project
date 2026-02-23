@@ -26,7 +26,7 @@
 <body class="bg-verde-800 font-sans">
   <div class="container pt-8 flex items-center md:justify-start justify-center">
     <div class="inline-flex items-center gap-4 rounded-md bg-verde-900">
-      <span class="relative -left-1 size-2 block rounded-full bg-verde-300"></span>
+      <span class="relative -left-1 size-2 block neon"></span>
       <div class="flex *:px-4 *:py-2 text-verde-300 divide-x-2 divide-verde-800 space-x-2">
         <div class="capitalize" id="dia">Segunda</div>
         <div id="temperatura">25°</div>
@@ -48,7 +48,7 @@
         <li class="group animate-slide-in opacity-0 duration-200 transition animate-6 "><a href="#contacto" class="lg:group-hover:underline lg:group-hover:underline-offset-8 max-sm:hover:bg-white/10 max-lg:hover:bg-white/10">Contato</a></li>
       </ul>
     </nav>
-    <button id="mobile-button" class="lg:hidden flex font-serif  bg-verde-400 text-verde-900 py-2 px-4 rounded-full items-center gap-2">Menu
+    <button id="mobile-button" class="lg:hidden flex font-serif  py-2 btn items-center gap-2">Menu
       <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-verde-900">
         <span></span>
         <span></span>
@@ -64,7 +64,7 @@
       <video width="1280" height="720" muted autoplay playsinline loop id="video" src="./img/video_chuva.mp4" class="-z-10 absolute inset-0 size-full   object-cover animate-fade-in"></video>
       <div class="md:bg-verde-950 flex md:flex-row flex-col justify-center md:inline-flex  md:items-center px-1 md:gap-8 gap-1 md:indent-0  py-1 md:pl-4 md:pr-1 rounded-full">
         vagas para dezembro abertas
-        <a href="" class="bg-verde-400 hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center max-w-fit px-8 md:px-4 inline-block rounded-full">Reserve Hoje</a>
+        <a href="#contacto" class="btn hover:bg-verde-400/95 hover:font-bold duration-200  text-verde-900 p-2 text-center max-w-fit px-4 md:px-4 inline-flex items-center gap-2">Reserve Hoje <img src="./img/seta.svg" class="ml-auto" alt="seta"></a>
         <!-- Container flex items-center flex mx-sm:flex-col items-end gap-2 -->
       </div>
       <h1 class="titulo mb-6 md:mb-20 py-4 md:py-4 font-alternative font-semibold md:leading-0 leading-2  text-balance text-xl sm:text-3xl md:text-5xl max-w-screen-sm">Venha Experimentar a Vida na Floresta</h1>
@@ -83,15 +83,15 @@
     </div>
   </main>
   <!-- Acomodacoes -->
-  <section id="acomodacao" class="container mb-12 md:mb-16 pt-16 grid md:grid-cols-[2fr_3fr] gpa-8">
+  <section id="acomodacao" class="radial-gradient container mb-12 md:mb-16 pt-16 grid md:grid-cols-[2fr_3fr] gpa-8">
     <div class="bg-verde-900/2 content-end  bg-contain bg-left-bottom rounded-md bg-fundo w-full h-full py-4 bg-no-repeat">
       <h2 class="text-white md:text-5xl pt-4 mb-8 font-alternative ">Refugio Natural</h2>
       <ul class="text-gray-200 *:text-xl grid gap-4">
         <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 bg-verde-300"></span>Experimente a natureza de perto</li>
-        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 bg-verde-300"></span>Conecte-se com a natureza</li>
-        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 bg-verde-300"></span>Desconecte-se do mundo digital</li>
-        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 bg-verde-300"></span>Observe a vida selvagem</li>
-        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 bg-verde-300"></span>Escolha a sua cabine preferida</li>
+        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 neon"></span>Conecte-se com a natureza</li>
+        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 neon"></span>Desconecte-se do mundo digital</li>
+        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 neon"></span>Observe a vida selvagem</li>
+        <li class="flex items-center gap-3"><span class="inline-block h-0.5  rounded-md w-6 neon"></span>Escolha a sua cabine preferida</li>
       </ul>
     </div>
     <div class="grid md:grid-cols-[2fr_1fr] gap-4 md:gap-6 ">
@@ -116,35 +116,35 @@
       <p class="mb-4 text-center font-alternative font-semibold text-verde-200 uppercase tracking-widest text-sm">Conecte-se com a natureza</p>
       <h2 class="mb-12 text-white mx-auto text-3xl font-serif text-balance max-w-screen-sm md:text-5xl text-center">Cada Som, Cada Momento, Uma Nova Descoberta</h2>
       <div class="grid grid-cols-[repeat(3,minmax(300px,1fr))] pb-4 md:pl-8 md:gap-8 gap-6 overflow-x-auto snap-x snap-mandatory ">
-        <div class="snap-center grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-verde-300/20 duration-200">
+        <div class="snap-center grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:translate-y-2 hover:shadow-lg hover:shadow-verde-300/20 duration-200">
           <h3 class="text-verde-300 text-2xl font-serif">Chuva de Meteoros</h3>
           <div class="text-white">
             <p class="font-serif text-5xl bg-verde-400/5 max-w-fit mb-4 rounded-lg p-4">23</p>
             <p class=" text-xl">Marco 2040</p>
           </div>
           <p class="text-gray-300 text-balance">Melhor período para observação astronômica. Ceu estara claro e as estrelas visiveis</p>
-          <a href="" class="bg-verde-400 hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 23/03</a>
+          <a href="" class="btn hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 23/03</a>
         </div>
 
         <!-- content 2 -->
-        <div class="snap-center grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:-translate-y-2 hover:shadow-lg hover:shadow-verde-300/20 duration-200">
+        <div class="snap-center grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:translate-y-2 hover:shadow-lg hover:shadow-verde-300/20 duration-200">
           <h3 class="text-verde-300 text-2xl font-serif">Aurora Boreals</h3>
           <div class="text-white">
             <p class="font-serif text-5xl bg-verde-400/5 max-w-fit mb-4 rounded-lg p-4">18</p>
             <p class=" text-xl">Abril 2040</p>
           </div>
           <p class="text-gray-300 text-balance">Melhor período para observação astronômica. Ceu estara claro e as estrelas visiveis</p>
-          <a href="" class="bg-verde-400 hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 18/04</a>
+          <a href="" class="btn hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 18/04</a>
         </div>
         <!-- content -3 -->
-        <div class="snap-center  grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:translate-y-2   duration-200">
+        <div class="snap-center  grid gap-4 bg-verde-800 p-6 md:p-8 rounded-xl hover:shadow-lg hover:shadow-verde-300/20 duration-200">
           <h3 class="text-verde-300   text-2xl font-serif ">Lua Nova</h3>
           <div class="text-white">
             <p class="font-serif text-5xl bg-verde-400/5 max-w-fit mb-4 rounded-lg p-4">15</p>
             <p class=" text-xl">Dezembro 2040</p>
           </div>
           <p class="text-gray-300 text-balance">Melhor período para observação astronômica. Ceu estara claro e as estrelas visiveis</p>
-          <a href="" class="bg-verde-400 hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 08/12</a>
+          <a href="" class="btn hover:bg-verde-400/95 hover:font-bold duration-200 hover:px-6  text-verde-900 p-2 text-center justify-self-start self-end px-8 md:px-4 inline-block rounded-full">Reservar 08/12</a>
         </div>
 
 
@@ -158,19 +158,19 @@
       <p class="text-verde-300 mb-8 text-xl font-sans">Experiencias Esclusivas</p>
       <h1 class="text-white md:text-4xl text-3xl font-alternative font-semibold text-balance">Escolha Sua Proxima Aventura</h1>
       <div class="border-t-2 mt-4 pt-6 border-verde-300">
-        <h3 class="flex items-center mb-2 gap-4 text-[20px] text-white before:h-1 before:w-6 before:bg-verde-300 before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Observação Noturna</h3>
+        <h3 class="flex items-center mb-2 gap-4 text-[20px] text-white before:h-1 before:w-6 before:neon before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Observação Noturna</h3>
         <div class="pl-10 mb-2 space-y-3 text-gray-300/40">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsum?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi unde nihil voluptatem sequi nobis quasi aut error eius. Error?</p>
         </div>
 
-        <h3 class="flex items-center mb-2 gap-4 text-2xl text-white before:h-1 before:w-6 before:bg-verde-300 before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Vida Selvagem</h3>
+        <h3 class="flex items-center mb-2 gap-4 text-2xl text-white before:h-1 before:w-6 before:neon before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Vida Selvagem</h3>
         <div class="pl-10 mb-2 space-y-2 text-gray-300/40">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsum?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi unde nihil voluptatem sequi nobis quasi aut error eius. Error?</p>
         </div>
 
-        <h3 class="flex items-center mb-2 gap-4 text-2xl text-white before:h-1 before:w-6 before:bg-verde-300 before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Canoagem</h3>
+        <h3 class="flex items-center mb-2 gap-4 text-2xl text-white before:h-1 before:w-6 before:neon before:rounded-xl duration-100 hover:font-bold before:transition-[width] hover:before:w-7">Canoagem</h3>
         <div class="pl-10  space-y-2 text-gray-300/40">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsum?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi unde nihil voluptatem sequi nobis quasi aut error eius. Error?</p>
@@ -200,51 +200,6 @@
     </div>
   </section>
   <!-- CICLO NATURAL -->
-  <section class=" ">
-
-
-    <!-- <div class="text-center bg-fundo bg-contain bg-center bg-no-repeat ">
-      <p class="text-verde-200">CICLO NATURAL</p>
-      <h1 class="text-2xl md:text-6xl font-[500px] text-white font-serif tracking-[1.4px] my-8">Ritmo da Floresta</h1>
-
-
-
-
-      <div class="grid md:grid-cols-3 gap-12 *:bg-verde-900 p-1 *:p-6 *:rounded-xl group *:cursor-pointer">
-
-        <div class="flex flex-col gap-4 items-start">
-          <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-300 rounded-full"><img src="./img/manha.svg" class="size-full" alt=""></span>
-          <h2 class="text-gray-300  mt-4 text-4xl font-serif">Amanhecer</h2>
-          <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
-          <div class="flex text-verde-300 font-sans text-sm gap-2">
-            <span>05:30</span>- <span>07:00</span>
-          </div>
-        </div>
-
-
-        <div class="flex flex-col gap-4 items-start md:translate-y-12 group-hover:translate-y-0 duration-200">
-          <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-300 rounded-full"><img src="./img/dia.svg" class="size-full" alt=""></span>
-          <h2 class="text-gray-300  mt-4 text-4xl font-serif">Meio-dia</h2>
-          <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
-          <div class="flex text-verde-300 font-sans text-sm gap-2">
-            <span>12:00</span>- <span>14:00</span>
-          </div>
-        </div>
-
-
-        <div class="flex flex-col gap-4 items-start">
-          <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-300 rounded-full"><img src="./img/noite.svg" class="size-full" alt=""></span>
-          <h2 class="text-gray-300  mt-4 text-4xl font-serif">Anoitecer</h2>
-          <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
-          <div class="flex text-verde-300 font-sans text-sm gap-2">
-            <span>19:00</span>- <span>21:00</span>
-          </div>
-        </div>
-      </div>
-
-
-    </div> -->
-  </section>
 
   <section class="container  bg-fundo bg-contain bg-center bg-no-repeat md:mb-12 md:py-0 py-16  mb-6">
     <p class="mb-4 text-center font-alternative font-semibold text-verde-200 uppercase tracking-widest text-sm">Circlo Natural</p>
@@ -252,25 +207,25 @@
     <div class="flex md:flex-row flex-col items-center justify-center md:space-y-0 space-y-4 md:gap-6 *:duration-200 mx-auto">
       <!-- Card 1 -->
       <div class=" md:hover:translate-y-2 transition-transform flex flex-col gap-4 items-start bg-verde-900 p-6 rounded-xl cursor-pointer">
-        <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-400 rounded-full"><img src="./img/manha.svg" class="size-full" alt=""></span>
+        <span class="h-12 w-12 p-2  flex items-center justify-center neon"><img src="./img/manha.svg" class="size-full" alt=""></span>
         <h2 class="text-gray-300  mt-4 text-4xl font-serif">Amanhecer</h2>
         <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
-        <div class="flex text-verde-300 font-sans text-sm gap-2">
+        <div class="flex items-center text-verde-300 font-sans text-sm gap-2">
           <span>05:30</span>- <span>07:00</span>
         </div>
       </div>
       <!-- Card 2 -->
       <div class="md:translate-y-8  md:hover:translate-y-0 transition-transform flex flex-col gap-4 items-start bg-verde-900 p-4 rounded-xl cursor-pointer">
-        <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-400 rounded-full"><img src="./img/manha.svg" class="size-full" alt=""></span>
-        <h2 class="text-gray-300  mt-4 text-4xl font-serif">Amanhecer</h2>
+        <span class="h-12 w-12 p-2  flex items-center justify-center neon"><img src="./img/dia.svg" class="size-full" alt=""></span>
+        <h2 class="text-gray-300  mt-4 text-4xl font-serif">Meio-dia</h2>
         <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
-        <div class="flex text-verde-300 font-sans text-sm gap-2">
-          <span>05:30</span>- <span>07:00</span>
+        <div class="flex items-center text-verde-300 font-sans text-sm gap-2">
+          <span>15:30</span>- <span>18:00</span>
         </div>
       </div>
       <!-- card 3 -->
       <div class="md:hover:translate-y-2 transition-transform   bg-verde-900 flex flex-col gap-4 items-start p-4 md:px-8 rounded-xl sm:p-8 cursor-pointer">
-        <span class="h-12 w-12 p-2  flex items-center justify-center bg-verde-400 rounded-full"><img src="./img/noite.svg" class="size-full" alt=""></span>
+        <span class="h-12 w-12 p-2  flex items-center justify-center neon"><img src="./img/noite.svg" class="size-full" alt=""></span>
         <h2 class="text-gray-300  mt-4 text-4xl font-serif">Anoitecer</h2>
         <p class="text-slate-300 tracking-normal  text-left">Desperte com o canto dos passaros e participe das nossas caminhadas ao ar livre.</p>
         <div class="flex text-verde-300 font-sans text-sm gap-2">
@@ -286,21 +241,21 @@
       <h1 class="font-serif text-4xl text-verde-300 md:mb-4 ">Nossos Contactos</h1>
       <p class="text-gray-200 text-balance mt-4">Tem interesse em passar uma tempporada na Forest? Entre em contacto connosco por telefone ou email.</p>
       <div>
-        <span class="h-1 w-6 mt-8 bg-verde-400 inline-block"></span>
-        <h2 class=" text-verde-300 text-3xl ">Base</h2>
-        <p class="mt-1 text-gray-200 text-2xl">Street forest 3c s32 </p>
+        <span class="h-1 w-6 mt-8 neon inline-block"></span>
+        <h2 class=" text-verde-300 text-2xl md:text-3xl ">Base</h2>
+        <p class="mt-1 text-gray-200 text-xl md:text-2xl">Street forest 3c s32 </p>
       </div>
 
       <div>
-        <span class="h-1 w-6 mt-8 bg-verde-400 inline-block"></span>
-        <h2 class=" text-verde-300 text-3xl ">Email</h2>
-        <p class="mt-1 text-gray-200 text-2xl">foreste@forest.com</p>
+        <span class="h-1 w-6 mt-8 neon inline-block"></span>
+        <h2 class=" text-verde-300 text-2xl md:text-3xl ">Email</h2>
+        <p class="mt-1 text-gray-200 text-xl md:text-2xl">foreste@forest.com</p>
       </div>
 
       <div>
-        <span class="h-1 w-6 mt-8 bg-verde-400 inline-block"></span>
-        <h2 class=" text-verde-300 text-3xl ">Phone</h2>
-        <p class="mt-1 text-gray-200 text-2xl">+44 079 345 678</p>
+        <span class="h-1 w-6 mt-8 neon inline-block"></span>
+        <h2 class=" text-verde-300 text-2xl md:text-3xl ">Phone</h2>
+        <p class="mt-1 text-gray-200 text-xl md:text-2xl">+44 079 345 678</p>
       </div>
     </div>
 
@@ -309,7 +264,7 @@
         <label for="Full Name" class="grid space-y-2">
           <span class="text-gray-200">Full Name</span>
           <div class="flex relative">
-            <input type="text" placeholder="Full Name" id="full-name  " class="w-full p-4 pl-4 rounded-md outline-none focus:outline-1 focus:outline-verde-400 focus:right-1 focus:shadow-lg focus:shadow-verde-400/20 duration-200 focus:ring-verde-400 border-2 border-verde-800  bg-verde-800/90">
+            <input type="text" placeholder="Full Name" id="full-name  " class="w-full p-4 pl-4 input">
           </div>
         </label>
       </div>
@@ -318,7 +273,7 @@
         <label for="telefone" class="grid space-y-2">
           <span class="text-gray-200">Telefone</span>
           <div class="flex relative">
-            <input type="tel" placeholder="(+44) 804-944-414" id="telefone" class="w-full p-4 pl-4 rounded-md outline-none focus:outline-1 focus:outline-verde-400 focus:right-1 focus:shadow-lg focus:shadow-verde-400/20 duration-200 focus:ring-verde-400 border-2 border-verde-800  bg-verde-800/90">
+            <input type="tel" placeholder="(+44) 804-944-414" id="telefone" class="w-full p-4 pl-4 input">
           </div>
         </label>
       </div>
@@ -326,18 +281,18 @@
         <label for="email" class="grid space-y-2">
           <span class="text-gray-200">Email</span>
           <div class="flex relative">
-            <input type="email" placeholder="email" id="email" class="w-full p-4 pl-4 rounded-md outline-none focus:outline-1 focus:outline-verde-400 focus:right-1 focus:shadow-lg focus:shadow-verde-400/20 duration-200 focus:ring-verde-400 border-2 border-verde-800  bg-verde-800/90">
+            <input type="email" placeholder="email" id="email" class="w-full p-4 pl-4 input">
           </div>
         </label>
       </div>
       <div class=" w-full col-span-full">
         <label for="message" class="grid space-y-2">
           <span class="text-gray-200">Message</span>
-          <textarea name="message" rows="8" id="message" placeholder="escreva aqui! " class="w-full p-2 pl-4 rounded-md outline-none focus:outline-1 text-xl text-white focus:outline-verde-400 focus:right-1 focus:shadow-lg focus:shadow-verde-400/20 duration-200 focus:ring-verde-400 border-2 placeholder:text-verde-900 border-verde-900 bg-verde-800 resize-none"></textarea>
+          <textarea name="message" rows="8" id="message" placeholder="escreva aqui! " class="w-full p-2 pl-4 input resize-none"></textarea>
         </label>
       </div>
 
-      <div class="md:col-start-1 md:col-span-1 col-span-full   rounded-full overflow-hidden w-full">
+      <div class="md:col-start-1 mt-4 md:col-span-1 col-span-full   rounded-full overflow-hidden w-full">
         <input type="button" value="Enviar" class="btn cursor-pointer hover:font-bold duration-200 hover:px-6 text-verde-900 p-2 text-center px-8 md:px-4 w-full inline-block rounded-md">
       </div>
 
@@ -346,6 +301,7 @@
   <!-- Parceiros  -->
 
   <section class="container mb-12 md:mb-16">
+    <p class="mb-4 text-center font-alternative font-semibold text-verde-200 uppercase tracking-widest text-sm">Parceiros</p>
     <ul class="md:*:*:max-h-8 *:*:max-h-6 bg-verde-900 flex md:flex-row flex-col items-center justify-center gap-4 md:gap-6 divide-y-2 divide-verde-800 p-4 px-8 *:p-4 md:divide-y-0  md:border-t-2 md:border-b-2 md:border-verde-800/10">
       <li><img src="./img/parceiros/caravan.svg" alt=""></li>
       <li><img src="./img/parceiros/dogs.svg" alt=""></li>
