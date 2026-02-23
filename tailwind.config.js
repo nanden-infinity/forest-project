@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
+import plugin from 'tailwindcss/plugin';
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
@@ -57,19 +57,20 @@ module.exports = {
       },
     },
   },
-  // plugins: [
-  //   plugin(({ addUtilities }) => {
-  //     function animationDelay() {
-  //       const delays = {};
-  //       for (let i = 0; i <= 12; i++) {
-  //         delays[`.animate-${i}`] = {
-  //           'animation-delay': `${i * 100}ms`,
-  //         };
-  //       }
-  //       return delays;
-  //     }
 
-  //     addUtilities(animationDelay());
-  //   }),
-  // ],
+  plugins: [
+    plugin(({ addUtilities }) => {
+      function animationDelay() {
+        const delays = {};
+        for (let i = 0; i <= 12; i++) {
+          delays[`.animate-${i}`] = {
+            'animation-delay': `${i * 100}ms`,
+          };
+        }
+        return delays;
+      }
+
+      addUtilities(animationDelay());
+    }),
+  ],
 };
