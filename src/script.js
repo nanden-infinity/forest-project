@@ -15,32 +15,32 @@
 //   .replace('-feira', '');
 
 // video.src = random < 25 ? `./img/video_chuva.mp4` : `./img/video_sol.mp4`;
-const hero = document.querySelector('.hero');
-const header = document.querySelector('header');
-const mobileButton = document.getElementById('mobile-button');
-const mobileMenu = document.getElementById('mobile-menu');
+const hero = document.querySelector(".hero");
+const header = document.querySelector("header");
+const mobileButton = document.getElementById("mobile-button");
+const mobileMenu = document.getElementById("mobile-menu");
 const random = Math.floor(Math.random() * 10) + 20;
-const tempo = document.getElementById('tempo');
-const dia = document.getElementById('dia');
-const video = document.querySelector('#video');
-const temperatura = document.getElementById('temperatura');
+const tempo = document.getElementById("tempo");
+const dia = document.getElementById("dia");
+const video = document.querySelector("#video");
+const temperatura = document.getElementById("temperatura");
 const date = new Date();
 dia.innerText = date
-  .toLocaleString('pt-pt', {
-    weekday: 'long',
+  .toLocaleString("pt-pt", {
+    weekday: "long",
   })
-  .replace('-feira', '');
+  .replace("-feira", "");
 temperatura.innerText = `${random}°`;
 tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : `🌤️`;
 video.src = random < 25 ? `./img/video_chuva.mp4` : `./img/video_sol.mp4`;
-mobileButton.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  mobileMenu.classList.toggle('flex');
+mobileButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("flex");
 });
 
-mobileMenu.addEventListener('click', () => {
-  mobileMenu.classList.add('hidden');
-  mobileMenu.classList.remove('flex');
+mobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
+  setTimeout(() => mobileMenu.classList.remove("flex"), Math.random() * 2);
 });
 
 // const options = {
