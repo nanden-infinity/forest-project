@@ -40,7 +40,7 @@ mobileButton.addEventListener("click", () => {
 
 mobileMenu.addEventListener("click", () => {
   mobileMenu.classList.add("hidden");
-  setTimeout(() => mobileMenu.classList.remove("flex"), Math.random() * 2);
+  setTimeout(() => mobileMenu.classList.remove("flex"), Math.random() * 200);
 });
 
 // const options = {
